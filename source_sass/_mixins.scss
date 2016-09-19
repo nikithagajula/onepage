@@ -1,0 +1,40 @@
+@mixin navsize-animation {
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+@mixin colBreak {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+@mixin numColumns($num) {
+  -webkit-column-count: $num;
+  -moz-column-count: $num;
+  column-count: $num;
+}
+
+@mixin columnGap($gap) {
+  -webkit-column-gap: $gap;
+  -moz-column-gap: $gap;
+  column-gap: $gap;
+}
+
+@mixin columnRule($width, $style, $color) {
+  -webkit-column-rule: $width $style $color;
+  -moz-column-rule: $width $style $color;
+  column-rule: $width $style $color;
+}
+
+@mixin columnSpan() {
+  -webkit-column-span: all;
+  column-span: all;
+}
+
+@mixin columnWidth($width) {
+  -webkit-column-width: $width;
+  -moz-column-width: $width;
+  column-width: $width;
+}

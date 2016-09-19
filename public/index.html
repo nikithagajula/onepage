@@ -7,11 +7,181 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
+  <!--<div>
+    <h1>OnePlus 3</h1>
+  </div><-->
+  <header class = "large">
+    <nav>
+      <ul>
+        <li><a id="li1" href="#overview">Overview</a></li>|
+        <li><a id="li2" href="#dash">Dash Charge</a></li>|
+        <li><a id="li3" href="#design">Design</a></li>|
+        <li><a id="li4" href="#camera">Camera</a></li>|
+        <li><a id="li5" href="#technology">Technology</a></li>|
+        <li><a id="li6" href="#oxygen">OxygenOS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="firstfiller" id="overview"></div>
+  <div class="divsec" id="firstsection">
+    <div class="innerdiv" id="overview">
+      <div>
+        <h1>Never Settle</h1>
+      </div>
+      <div>
+        <p>It’s about time for a smartphone without compromises. A smartphone conceived and built by tech enthusiasts, hand-in-hand with users. A smartphone born from amazing technology, design, and innovation. It’s about time for the OnePlus 3. But, you shouldn’t take our word for it. You be the judge.</p>
+      </div>
+    </div>
+    <div class="fillerdiv"  id="dash"></div>
+    <div class="innerdiv">
+      <div>
+        <h1>Faster.Safer.Cooler</h1>
+      </div>
+      <div>
+        <p>Not all fast charging technologies are created equal. Dash Charge for the OnePlus 3 is faster, safer, cooler - and simply better - than any other charging technology available today. Providing you a day’s power in half an hour, Dash Charge will change the way you think about charging. Dash Charge technology is only compatible with the Dash Charge type-C cable and adapter.</p>
+      </div>
+    </div>
+    <div class="fillerdiv" id="design"></div>
+    <div class="innerdiv">
+      <div>
+        <h1>Please Touch the Merchandise</h1>
+      </div>
+      <div>
+        <p>We’ve taken our obsession with aesthetics, quality, and usability to a whole new level. The OnePlus 3’s metal unibody is carved from a single slab of premium aluminum, resulting in an ultra-thin design with a satisfying, solid build.</p>
+      </div>
+    </div>
+    <div class="fillerdiv"  id="camera"></div>
+    <div class="innerdiv">
+      <div>
+        <h1>Smart Capture</h1>
+      </div>
+      <div>
+        <p>Our 16MP camera boasts lightning-fast shutter speed, snappy autofocus, and intelligent software to deliver an unmatched user experience. Cutting-edge noise reduction technology ensures that every shot is sharp and crisp, while two advanced stabilization methods prevent unwanted shakes and movements. Capture that stunning photo or video, every time.</p>
+      </div>
+    </div>
+  </div>
+  <div class="carouseldiv">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="css/Images/pic1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="css/Images/pic2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="css/Images/pic3.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="fillerdiv" id = "technology"></div>
+  </div>
+
+  <!--
+  <div class=carousel>
+    <img id="pictures" src="css/Images/pic1.jpg"/>
+    <div id="leftarrow"><img class=left src="css/Images/left.jpg" /></div>
+    <div id="rightarrow"><img class=right src="css/Images/right.jpg" /></div>
+  </div>-->
+  <div id="secondsection">
+    <div class="innerdiv" id="technology1">
+      <div>
+        <h1>Groundbreaking</h1>
+      </div>
+      <div class="columndiv">
+        <div id="col1">
+          <h2>Memory</h2>
+          <p>Packing 6GB of LPDDR4 RAM, the OnePlus 3 sets a new standard in smartphone memory. Effortlessly shift between shooting 4K videos and playing graphic-intensive games without any delay or lag. And since apps are always evolving to become more and more demanding, the OnePlus 3 has what it takes to tackle whatever the future may bring.</p>
+        </div>
+        <div id="col2">
+          <h2>Fingerprint Sensor</h2>
+          <p>Our improved fingerprint sensor unlocks your OnePlus 3 in just 0.2 seconds, even from a sleeping screen. Fashioned out of premium ceramic for an artisanal touch, the fingerprint sensor actively learns and progressively improves, so your scans get even more precise over time. It’s fast, it’s accurate, and it’s secure.</p>
+        </div>
+        <div id="col3">
+          <h2>Optic AMOLED</h2>
+          <p>Our stunning 5.5” Optic AMOLED display produces colors that are more vivid and true-to-life than ever before. A series of custom-engineered gamma corrections create a more natural viewing experience, while a dual-polarizing layer ensures ideal clarity, even in the brightest sunlight. The end result? Deep blacks, bright whites, and authentic color reproduction - all at a fraction of the power consumption. It’s the smarter smartphone display.</p>
+        </div>
+      </div>
+    </div>
+    <div class="innerdiv" id="oxygen">
+      <div>
+        <h1>Lighter, More Powerful</h1>
+      </div>
+      <div class="modals">
+      <div>
+        <!-- Trigger the Modal -->
+        <img id="myMImg" src="css/Images/modal1.jpg" alt="Introducing Marshmallow, The next big step forward." width="500" height="400">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+      </div>
+      <div>
+          <!-- Trigger the Modal -->
+        <img id="myMImg2" src="css/Images/modal2.jpg" alt="Customization. All about the options." width="500" height="400">
+
+          <!-- The Modal -->
+        <div id="myModal2" class="modal">
+
+            <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+        <img class="modal-content" src="css/Images/modal2.jpg"  id="img012">
+
+          <!-- Modal Caption (Image Text) -->
+        <div id="caption2"></div>
+      </div>
+      </div>
+      <div>
+            <!-- Trigger the Modal -->
+        <img id="myMImg3" src="css/Images/modal3.jpg" alt="Shelf. Everything you need in one place." width="500" height="400">
+
+            <!-- The Modal -->
+        <div id="myModal3" class="modal">
+
+              <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+        <img class="modal-content" src="css/Images/modal3.jpg" id="img013">
+
+          <!-- Modal Caption (Image Text) -->
+        <div id="caption3"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+  </footer>
+  <!--  <div class="test"> My name is Anthony.</div>
   <div class="cat">
     <img src="./media/cat.jpg" alt="Cat">
-  </div>
+  </div>-->
 
   <script src="lib/jquery-2.1.3.min/index.js"></script>
   <script src="js/script.js"></script>

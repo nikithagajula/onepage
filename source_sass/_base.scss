@@ -2,12 +2,371 @@
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 
-h1 {
-  font-size: 2.2rem;
-  color: lighten($orange, 25);
+header {
+  background: $lightblack;
+  border-bottom:
+  1px solid #aaaaaa;
+  float: left;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
-.test {
-  font-size: 1.2rem;
-  color: $blue;
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+}
+
+header a.active, header a:hover{
+  background-color: $darkblack;
+}
+
+header li{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* Sizes for the bigger menu */
+header.large {
+  height: 120px;
+}
+
+header.large img {
+  width: 489px;
+  height: 113px;
+}
+
+header.large li{
+  margin-top: 45px;
+}
+
+header.small {
+  height: 30px;
+}
+
+header.small img {
+  width: 287px;
+  height: 69px;
+  margin-top: -10px;
+}
+
+header.small li {
+  margin-top: 17px;
+}
+
+nav {
+  margin: 0 auto;
+  z-index: 500;
+  background-color: $lightblack;
+  width: 100%;
+  position: fixed;
+
+  ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+}
+
+header, nav, a, img, li {
+  @include navsize-animation;
+}
+
+.innerdiv {
+  padding: 30px;
+  height: 700px;
+  //width: 100%;
+}
+
+.firstfiller {
+  height: 120px;
+  background-color: $lightblack;
+}
+
+.fillerdiv {
+  height: 60px;
+}
+
+.divsec {
+  position: relative;
+  //padding: 50px 50px;
+  text-align: center;
+  background-color: white;
+
+  h1 {
+    color: $lightblack;
+    position: relative;
+    float: left;
+  }
+
+  p {
+    color: $ablue;
+    position: relative;
+    width: 50%;
+    left: 300px;
+  }
+}
+
+#firstsection {
+  background: url('Images/Background.jpg') right no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: #181818;
+  background-origin: content-box;
+
+}
+
+.carouseldiv {
+  background-color: #181818;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.columndiv {
+  @include numColumns(3);
+  @include columnGap(40px);
+  @include columnRule(1px, solid, white);
+
+  h2 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+#col1 {
+  @include colBreak;
+}
+
+#col2 {
+  @include colBreak;
+}
+
+#col3 {
+  @include colBreak;
+}
+
+#overview {
+
+}
+
+#dash {
+
+}
+
+#design {
+
+}
+
+#camera {
+
+}
+
+#technology1 {
+  background: url('Images/Technology.jpg') center no-repeat;
+  background-size: cover;
+
+  h1 {
+    color: white;
+  }
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myMImg, #myMImg2, #myMImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myMImg:hover {opacity: 0.7;}
+#myMImg2:hover {opacity: 0.7;}
+#myMImg3:hover {opacity: 0.7;}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption, #caption2, #caption3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption, #caption2, #caption3 {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.modals {
+  @include numColumns(3);
+  @include columnGap(40px);
+  @include columnRule(0px, solid, white);
+}
+
+#oxygen {
+  height: 600px;
+  background-color: $darkblack;
+}
+
+footer {
+  background-color: $lightblack;
+  height: 200px;
+  display: block;
 }
