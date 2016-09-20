@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <link rel="icon" sizes="16x16" href="css/Images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="css/Images/favicon-16.png">
+
   <meta charset="UTF-8">
   <title>MP1 Starter</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -23,22 +26,17 @@
     </nav>
   </header>
   <div class="firstfiller" id="overview"></div>
-  <div class="divsec" id="firstsection">
-    <div class="innerdiv" id="overview">
-      <div>
-        <h1>Never Settle</h1>
-      </div>
-      <div>
-        <p>It’s about time for a smartphone without compromises. A smartphone conceived and built by tech enthusiasts, hand-in-hand with users. A smartphone born from amazing technology, design, and innovation. It’s about time for the OnePlus 3. But, you shouldn’t take our word for it. You be the judge.</p>
-      </div>
+    <div class="firstdiv" id="overview">
+      <video class="video-background" loop no-controls autoplay src="css/Images/OnePlus3.mp4"></video>
     </div>
+    <div class="divsec" id="firstsection">
     <div class="fillerdiv"  id="dash"></div>
     <div class="innerdiv">
       <div>
         <h1>Faster.Safer.Cooler</h1>
       </div>
-      <div>
-        <p>Not all fast charging technologies are created equal. Dash Charge for the OnePlus 3 is faster, safer, cooler - and simply better - than any other charging technology available today. Providing you a day’s power in half an hour, Dash Charge will change the way you think about charging. Dash Charge technology is only compatible with the Dash Charge type-C cable and adapter.</p>
+      <div id="dashp">
+        <p>Not all fast charging technologies are created equal. <br> Dash Charge for the OnePlus 3 is faster, safer, cooler - and simply better - than any other charging technology available today. <br> Providing you a day’s power in half an hour, <br> Dash Charge will change the way you think about charging. <br> Dash Charge technology is only compatible with the Dash Charge type-C cable and adapter.</p>
       </div>
     </div>
     <div class="fillerdiv" id="design"></div>
@@ -46,8 +44,8 @@
       <div>
         <h1>Please Touch the Merchandise</h1>
       </div>
-      <div>
-        <p>We’ve taken our obsession with aesthetics, quality, and usability to a whole new level. The OnePlus 3’s metal unibody is carved from a single slab of premium aluminum, resulting in an ultra-thin design with a satisfying, solid build.</p>
+      <div id="designp">
+        <p>We’ve taken our obsession with aesthetics, quality, and usability to a whole new level. <br> The OnePlus 3’s metal unibody is carved from a single slab of premium aluminum, resulting in an ultra-thin design with a satisfying, solid build.</p>
       </div>
     </div>
     <div class="fillerdiv"  id="camera"></div>
@@ -55,8 +53,8 @@
       <div>
         <h1>Smart Capture</h1>
       </div>
-      <div>
-        <p>Our 16MP camera boasts lightning-fast shutter speed, snappy autofocus, and intelligent software to deliver an unmatched user experience. Cutting-edge noise reduction technology ensures that every shot is sharp and crisp, while two advanced stabilization methods prevent unwanted shakes and movements. Capture that stunning photo or video, every time.</p>
+      <div id="camerap">
+        <p>16MP camera boasts lightning-fast shutter speed, snappy autofocus, and intelligent software to deliver an unmatched user experience. <br> Cutting-edge noise reduction technology ensures that every shot is sharp and crisp, while two advanced stabilization methods prevent unwanted shakes and movements. <br> Capture that stunning photo or video, every time.</p>
       </div>
     </div>
   </div>
@@ -101,7 +99,7 @@
       <div>
         <h1>Groundbreaking</h1>
       </div>
-      <div class="columndiv">
+      <div id="techdescriptions" class="columndiv">
         <div id="col1">
           <h2>Memory</h2>
           <p>Packing 6GB of LPDDR4 RAM, the OnePlus 3 sets a new standard in smartphone memory. Effortlessly shift between shooting 4K videos and playing graphic-intensive games without any delay or lag. And since apps are always evolving to become more and more demanding, the OnePlus 3 has what it takes to tackle whatever the future may bring.</p>
@@ -132,7 +130,7 @@
         <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
           <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
+        <img class="modal-content" src="css/Images/modal1.jpg" id="img01">
 
           <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
@@ -177,6 +175,42 @@
   </div>
 
   <footer>
+    <div id="footercol" class="columndiv">
+      <div id="footercol1">
+        <h3>Location</h3>
+        <p>508 East Healey</p>
+        <p>Champaign, IL</p>
+      </div>
+      <div id="footercol2">
+        <h3>Contact Us</h3>
+        <p>Email: nkumar10@illinois.edu</p>
+        <p>Phone: (630) 730-9439</p>
+      </div>
+      <div id="footercol3">
+        <h3>Follow Us On</h3>
+        <div id="socialmedia">
+          <!--<a href="https://twitter.com/oneplus"><img src="css/Images/twitter.png" width="30px" height="30px" /></a>
+          <a href="https://www.facebook.com/oneplusofficial"><img src="css/Images/facebook.png" width="30px" height="30px" /></a>
+          <a href="https://www.instagram.com/oneplustech/"><img src="css/Images/instragram.jpg" width="30px" height="30px" /></a>
+        -->
+          <span class="fa-stack fa-lg">
+            <a href="https://twitter.com/oneplus">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i></a>
+          </span>
+          <span class="fa-stack fa-lg">
+            <a href="https://www.facebook.com/oneplusofficial">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x"></i></a>
+          </span>
+          <span class="fa-stack fa-lg">
+            <a href="https://www.instagram.com/oneplustech/">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
   </footer>
   <!--  <div class="test"> My name is Anthony.</div>
   <div class="cat">

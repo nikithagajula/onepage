@@ -135,9 +135,8 @@ $(function() {
 
 // Get the modal
 var modal = document.getElementById('myModal');
-var modal3 = document.getElementById('myModal2');
-var modal2 = document.getElementById('myModal3');
-
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('myMImg');
 var img2 = document.getElementById('myMImg2');
@@ -150,7 +149,7 @@ var captionText2 = document.getElementById("caption2");
 var captionText3 = document.getElementById("caption3");
 img.onclick = function(){
     modal.style.display = "block";
-    modalImg.src = this.src;
+    //modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
 img2.onclick = function(){

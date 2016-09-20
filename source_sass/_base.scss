@@ -1,6 +1,47 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
+/*html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    //overflow-x: hidden;
+}*/
+h1, h2 {
+ color: white;
+ font-family: "Great Vibes", cursive;
+ font-size: 50px;
+ line-height: 60px;
+ font-weight: normal;
+ margin-bottom: 0px;
+ margin-top: 40px;
+ text-shadow: 0 1px 1px #fff;
+  //color: white;
+}
+
+h3 {
+  color: white;
+  font-family: "Great Vibes", cursive;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px #fff;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+}
+
+.fa {
+  color: #F8F8F8;
+}
 
 header {
   background: $lightblack;
@@ -95,6 +136,33 @@ header, nav, a, img, li {
   //width: 100%;
 }
 
+.firstdiv {
+  //background-color: $darkblack;
+  height: 640px;
+  padding: 0px;
+  overflow: hidden;
+
+  h1 {
+    z-index: 300;
+  }
+  p {
+    z-index: 300;
+  }
+
+}
+
+.video-background {
+  background-color: $darkblack;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .firstfiller {
   height: 120px;
   background-color: $lightblack;
@@ -111,13 +179,12 @@ header, nav, a, img, li {
   background-color: white;
 
   h1 {
-    color: $lightblack;
+    color: white;
     position: relative;
     float: left;
   }
 
   p {
-    color: $ablue;
     position: relative;
     width: 50%;
     left: 300px;
@@ -130,11 +197,13 @@ header, nav, a, img, li {
   background-size: contain;
   background-color: #181818;
   background-origin: content-box;
+  background-position: right;
 
 }
 
 .carouseldiv {
   background-color: #181818;
+  padding-top: 60px;
 }
 
 /* Slideshow container */
@@ -244,15 +313,59 @@ header, nav, a, img, li {
 }
 
 #dash {
+  h1 {
+    padding: 30px;
+    margin-bottom: 0px;
+  }
 
+}
+
+#dashp {
+  position: relative;
+  top: 120px;
+  width:50%;
+
+  p{
+    text-align: left;
+    color: white;
+  }
 }
 
 #design {
+  h1 {
+    padding: 30px;
+    margin-bottom: 0px;
+  }
+}
 
+#designp {
+  position: relative;
+  top: 120px;
+  width:50%;
+
+  p{
+    text-align: left;
+    color: white;
+  }
 }
 
 #camera {
+  h1 {
+    padding: 30px;
+    margin-bottom: 0px;
+  }
 
+}
+
+#camerap {
+  position: relative;
+  top: 120px;
+  width:50%;
+
+  p{
+    text-align: left;
+    color: white;
+  }
 }
 
 #technology1 {
@@ -261,7 +374,26 @@ header, nav, a, img, li {
 
   h1 {
     color: white;
+    text-align: center;
   }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    line-height: 10px;
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+#techdescriptions {
+  position: relative;
+  top: 60px;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -363,10 +495,33 @@ header, nav, a, img, li {
 #oxygen {
   height: 600px;
   background-color: $darkblack;
+
+  h1 {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
 }
 
 footer {
+  text-align: center;
+  vertical-align: middle;
   background-color: $lightblack;
-  height: 200px;
+  height: 100px;
   display: block;
+
+  p {
+    padding: 5px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+#footercol {
+  position: relative;
+  top: 20px;
+  vertical-align: middle;
+  @include numColumns(3);
+  @include columnGap(40px);
+  @include columnRule(0px, solid, white);
 }
